@@ -113,6 +113,7 @@ multi-source traffic forecasting.
 
 The processed datasets follow the directory structure below:
 
+```text
 data/
 ├── btmstf/
 │   ├── btmstf.csv
@@ -131,20 +132,16 @@ data/
 └── PEMS08/
     ├── PEMS08.csv
     └── PEMS08.npz
+```
 
 For BT-MSTF:
 
-- `btmstf.npz` contains the processed traffic-flow sequence used as the main
-  temporal input.
-- `btmstf.csv` stores the road-network connections in the form
-  `[from, to, distance]`.
-- `poi.csv` contains the node identifier and the corresponding POI-category
-  counts.
-- `weather.csv` contains the temporally aligned weather information used by
-  the multi-source model.
+- `btmstf.npz` contains the processed traffic-flow sequence used as the main temporal input.
+- `btmstf.csv` stores the road-network connections in the form `[from, to, distance]`.
+- `poi.csv` contains the node identifier and the corresponding POI-category counts.
+- `weather.csv` contains the encoded and temporally aligned weather information used by the multi-source model.
 
-The PeMS folders contain the corresponding public traffic-flow data and
-road-network information used for the traffic-only benchmark experiments.
+The PeMS folders contain the corresponding public traffic-flow data and road-network information used for the traffic-only benchmark experiments.
 
 ## 7. Data Availability
 
